@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <header>ИПОТЕЧНЫЙ КАЛЬКУЛЯТОР</header>
+    <div>
+        <div class="calculator">
+            <div class="calc-item">
+                <label>Стоимость недвижимости</label>
+                <input
+                    type="text"
+                    name="price"
+                    id="price"
+                    class="calc-input"
+                    autocomplete="off"
+                >
+                <input type="range" step="1" min="0" max="30">
+            </div>
+            <div class="calc-item">
+                <label>Первоначальный взнос</label>
+                <input
+                    type="text"
+                    name="initial_contribution"
+                    id="initial_contribution"
+                    class="calc-input"
+                >
+                <input type="range" step="1" min="0" max="30">
+            </div>
+            <div class="calc-item">
+                <label>Срок ипотеки (лет)</label>
+                <input
+                    type="text"
+                    name="term"
+                    id="term"
+                    class="calc-input"
+                >
+            </div>
+            <div class="calc-item">
+                <label for="price">Процентная ставка (%)</label>
+                <input
+                    type="text"
+                    name="percent"
+                    id="percent"
+                    class="calc-input"
+                >
+            </div>
+            <div class="calc-output">
+                <div class="button-div"><button onclick="calc()"><i class='bx bx-right-arrow-alt'></i></button></div>
+                <span></span>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

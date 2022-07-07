@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Univia';
+    src: url('../UniviaPro-Regular.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Univia';
+    src: url('../UniviaPro-Book.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Univia';
+    src: url('../UniviaPro-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Univia';
+    src: url('../UniviaPro-UltraLight.ttf');
+    font-weight: 200;
+}
+
+
+html, body{
+    margin: 10px 12px;
+}
+
+header{
+    font-family: 'Univia';
+    font-weight: 500;
+    font-size: 50px;
+    color: rgb(20, 20, 20);
+}
+
+.calculator{
+    font-family: 'Univia';
+    font-weight: 300;
+}
+
+.calc-item{
+    position: relative;
+    display: block;
+    width: 250px;
+    border: none;
+    border-radius: 30px;
+    margin: 30px;
+    height: 55px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2); 
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2); 
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.calc-item label{
+    font-weight: 300;
+    font-size: 12px;
+    color:rgb(100, 100, 100);
+    left: 40px;
+    top: 3px;
+    position: absolute;
+    pointer-events: none;
+}
+
+
+.calc-item input[type="text"]{
+    color: rgb(50, 50, 50);
+    font-weight: 300;
+    font-size: 25px;
+    border: none;
+    width: 100%;
+    border-radius: 30px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 30px 5px 40px;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+}
+
+.calc-item input[type="text"]:hover{
+    box-shadow: 0 0 0 2px rgb(132, 164, 181);
+}
+
+.calc-item input[type="text"]:focus{
+    box-shadow: 0 0 0 2px rgb(132, 164, 181);
+    outline: none;
+}
+
+.calc-item [type="range"]{
+  -webkit-appearance: none;
+  left: 24px;
+  width: 200px;
+  bottom: -3px;
+  position: absolute;
+  height: 5px;
+  border-radius: 6px;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.calc-item [type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    border: rgb(100, 100, 100) 2px solid;
+    cursor: pointer;
+    -webkit-transition: border-color .07s ease-in-out;
+    transition: border-color .07s ease-in-out;
+}
+
+.calc-item [type="range"]::-webkit-slider-thumb:hover{
+    border-color: rgb(132, 164, 181);
+}
+
+.calc-output{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.calc-output .button-div{
+    display: inline-block;
+    margin-left: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2); 
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2); 
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.calc-output button{
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    color: rgb(132, 164, 181);
+    padding: 0;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+}
+
+.calc-output button:hover{
+    box-shadow: 0 0 0 2px rgb(132, 164, 181);
+}
+
+.calc-output span{
+    font-weight: 400;
+    color: rgb(50, 50, 50);
+    position: absolute;
+    left: 150px;
+}
